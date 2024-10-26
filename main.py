@@ -10,9 +10,6 @@ def create_conversation():
 @app.route('/create', methods=['POST'])
 def create():
     prompt = request.form.get('prompt')
-    if not prompt:
-        return jsonify({'error': 'No prompt provided'}), 400
-        
     conversation = generate_conversation(prompt)
     return jsonify(conversation)
 
