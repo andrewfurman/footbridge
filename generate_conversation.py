@@ -33,7 +33,7 @@ def generate_conversation(prompt):
                   "properties": {
                       "conversation": {
                           "type": "string",
-                          "decription": "The conversation steps"
+                          "decription": "The conversation between the doctor and the patient. This should be a conversation that would last between 5 and 10 minutes. In this conversation, there must be a clear medical condition that the patient is diagnosed with. This must be formatted in markdown."
                       }
                   },
                   "required": ["conversation"],
