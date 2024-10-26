@@ -31,22 +31,12 @@ def generate_conversation(prompt):
               "schema": {
                   "type": "object",
                   "properties": {
-                      "steps": {
-                          "type": "array",
-                          "items": {
-                              "type": "object",
-                              "properties": {
-                                  "explanation": {
-                                      "type": "string",
-                                      "description": "A short explanation of the step"
-                                  }
-                              },
-                              "required": ["explanation"],
-                              "additionalProperties": False
-                          }
+                      "conversation": {
+                          "type": "string",
+                          "decription": "The conversation steps"
                       }
                   },
-                  "required": ["steps"],
+                  "required": ["conversation"],
                   "additionalProperties": False
               },
               "strict": True
