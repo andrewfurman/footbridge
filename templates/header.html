@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body class="bg-gray-100">
+    <nav class="bg-blue-900 shadow-lg">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between">
+                <div class="flex items-center py-4">
+                    <span class="font-bold text-white text-xl">🌉 FootBridge</span>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <a href="/" class="text-white hover:text-gray-200">Create</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    {% block content %}{% endblock %}
+</body>
+</html>
